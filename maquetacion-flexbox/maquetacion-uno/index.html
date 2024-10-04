@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación Uno</title>
+
+    <style>
+        body{
+            background-color: beige;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: bisque;
+            width: 100%;
+            height: 50px;
+        }
+        .Circulos{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 15px;
+            
+        }
+        .circulo{
+            background-color: blue;
+            width: 15px;
+            height: 30px;
+            border-radius: 100%;
+            
+        }
+        .Botones{
+            display: flex;
+            justify-content: space-evenly;
+           gap: 15px;
+        }
+        .boton{
+            background-color: blue;
+            border-radius: 10px;
+            width: 70px;
+            height: 20px;
+            color: white;
+        }
+        nav{
+            background-color: beige;
+            width: 100%;
+            height: 30PX;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        main{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 350px;
+        }
+        .Hero-principal{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            background-color: bisque;
+            border-radius: 20px;
+            width: 45%;
+            height: 300px;
+            
+        }
+        .titulo{
+            color: blue;
+        }
+        .parrafo{
+            text-align: center;
+            width: 45%;
+        }
+        .boton-principal{
+            background-color: blue;
+            border-radius: 10px;
+            color: white;
+        }
+        .Hero-redondo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            background-color: bisque;
+            border-radius: 20px;
+            width: 45%;
+            height: 300px;
+        }
+        .hero-lorem{
+            background-color: bisque;
+            border-color: blue;
+            border-radius: 100%;
+            width: 200px;
+            height: 200px;
+            
+
+        }
+        .titulo2{
+            color: blue;
+        }
+        .derecha-izquierda{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            width: 45%;
+            height: 400px;
+        }
+        .izquierda{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+            border-radius: 20px;
+            width: 45%;
+            height: 400px;
+        }
+        .hero-izquierdo{
+            background-color: bisque;
+            border-color: blue;
+            border-radius: 100%;
+            width: 150px;
+            height: 150px;
+        }
+        .titulo-hero-izquierdo{
+            color: blue;
+        }
+        .boton-izquierdo{
+            background-color: blue;
+            border-radius: 10px;
+            color: white;
+        }
+        .derecha{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+            border-radius: 20px;
+            width: 45%;
+            height: 400px;
+        }
+        .hero-derecha{
+            background-color: bisque;
+            border-color: blue;
+            border-radius: 100%;
+            width: 150px;
+            height: 150px;
+        }
+        .titulo-hero-derecho{
+            color: blue;
+        }
+        .boton-derecho{
+            background-color: blue;
+            border-radius: 10px;
+            color: white;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="Circulos">
+            <button class="circulo"></button>
+            <button class="circulo"></button>
+            <button class="circulo"></button>
+        </div>
+        <div class="Botones">
+            <button class="boton">Boton</button>
+            <button class="boton">Boton</button>
+            <button class="boton">Boton</button>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="">Lista</a>
+        <a href="">Lista</a>
+        <a href="">Lista</a>
+        <a href="">Lista</a>
+        <a href="">Lista</a>
+        <a href="">Lista</a>
+        <a href="">Lista</a>
+        <a href="">Lista</a>
+    </nav>
+    <HR>
+        <main>
+            <section class="Hero-principal">
+                <h1 class="titulo">HERO</h1>
+                <p class="parrafo">
+                    Lorem ipsum dolor sit comit consectetur
+                    adipiscing elitsit, odit out lure magni
+                    amnis quas a eligendsoepe nesclunt modi nobis
+                    quisquama acusantium.
+                </p>
+                <button class="boton-principal">button prncipal</button>
+            </section>
+    
+            <section class="Hero-redondo">
+                <button class="hero-lorem">
+                    <h1 class="titulo2">HERO</h1>
+                    <h6 class="texto-hero">Lorem imput dolor sit</h6>
+                </button>
+    
+            </section>
+        </main>
+    </HR>
+    
+
+    <section class="derecha-izquierda">
+
+        <div class="izquierda">
+            <button class="hero-izquierdo">
+                <h1 class="titulo-hero-izquierdo">HERO</h1>
+            </button>
+            <H1 class="titulo-izquierdo">LEFT CARD</H1>
+            <p class="parrafo-izquierdo">Lorem ipsum dolor sit, amet consectetur odipiscing elit officis</p>
+            <button class="boton-izquierdo">Boton left</button>
+        </div>
+
+        <div class="derecha">
+            <button class="hero-derecha">
+                <h1 class="titulo-hero-derecho">HERO</h1>
+            </button>
+            <H1 class="titulo-derecho">RIGHT CARD</H1>
+            <p class="parrafo-derecho">Lorem ipsum dolor sit, amet consectetur odipiscing elit officis</p>
+            <button class="boton-derecho">Boton Right</button>
+
+        </div>
+
+    </section>
+
+    <div class="texto">
+        <section class="texto1">
+            <h1 class="tituo-texto1">H</h1>
+            <p class="parrafo-texto1">
+                Lorem ipsum dolor sit comit consectetur
+                adipiscing elitsit, odit out lure magni
+                amnis quas a eligendsoepe nesclunt modi nobis
+                quisquama acusantium.
+            </p>
+
+        </section>
+
+        <section class="texto2">
+           <p class="parrafo-texto2">
+             Lorem ipsum dolor sit comit consectetur
+             adipiscing elitsit, odit out lure magni
+             amnis quas a eligendsoepe nesclunt modi nobis
+             quisquama acusantium.
+           </p>
+
+        </section>
+    </div>
+
+   
+    
+</body>
+</html>

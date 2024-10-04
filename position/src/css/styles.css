@@ -1,0 +1,67 @@
+header{
+    width: 100%;
+    height: 150px;
+    background-color: yellow;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+nav{
+    display: flex;
+    width: 50%;
+    height: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #ffff;
+    width: 90%;
+    height: 100%;
+    background-color: #387f39;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.contenido-principal{
+    width: 100%;
+    height: 1200px;
+    background-color: #bedc74;
+    display: flex;
+}
+section{
+    width: 25%;
+    height: 400px;
+    border: solid black 1px;
+}
+ .relative{  /*Esto es para algo mas personalizado */
+    background-color: #a2ca71;
+    position: relative;
+    top: 300px;
+    left: 300px;
+    z-index: 1;
+}
+.absolute{
+    background-color: green;
+    position: absolute;
+    top: 200px;
+    left: 120px;
+}
+.fixed{
+    background-color: greenyellow;
+    position: fixed;
+    top: 200px;
+    left: 120px;
+}
+.sticky{
+    background-color: rgb(8, 46, 8);
+    position: sticky;
+    top: 10px;
+    left: 120px;
+
+}

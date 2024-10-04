@@ -1,0 +1,189 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #1845ad;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  
+  nav section {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav section span {
+    margin: 0 15px;
+  }
+  
+  nav section span a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  nav section span a:hover{
+    background-color: #f09819;
+    padding: 20px;
+    transition: ease 2s;
+  }
+  nav section span:nth-child(3):hover{
+    background-color: black;
+  }
+  nav section span:first-child:hover{
+    background-color: red;
+  }
+  nav section span:last-child:hover{
+    background-color: red;
+  }
+  
+  
+  section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #informacion {
+    background-color: #23a2f6;
+    color: #fff;
+    height: 600px;
+  }
+  
+  #productos {
+    background-color: #f09819;
+    height: 800px;
+  }
+  
+  .product-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: ease-in-out 2s;
+  }
+  
+  .product:nth-child(1):hover {
+    transform: translateY(200px)  scale(3);
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+  }
+  
+
+  #servicios {
+    background-color: #1845ad;
+    color: #fff;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #servicios section {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+  }
+  
+  #servicios section span {
+    width: 33.3%;
+    padding: 10px;
+    background-color: #ff512f;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  #contacto {
+    background-color: #fff;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form label {
+    margin: 10px 0 5px;
+  }
+  
+  form input, form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    background-color: #23a2f6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #1845ad;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .menu-lateral{
+    position: absolute;
+    top: 0;
+   
+  }
+  .menu-lateral label{
+    width: 45px;
+    height: 45px;
+    background-color: #ff512f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  .menu-lateral input{
+    display: none;
+  }
+  .menu-lateral input:checked ~ nav{
+    width: 400px;
+    height: 1200px;
+    background-color: #23a2f6;
+  }
+  
