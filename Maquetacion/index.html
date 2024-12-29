@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación Hero con Flexbox Semántico</title>
+    
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+/* Sección Hero */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #ddd;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.hero-title {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.hero-subtitle {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.hero-button {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Sección principal con artículos (tarjetas) */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.cards {
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+}
+
+.card-large, .card-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #fff;
+}
+
+.card-large {
+    flex-grow: 2;
+}
+
+.card-small {
+    flex-grow: 1;
+}
+
+/* Ajustes de texto */
+.card-small h3, .card-large h2 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Sección principal de Hero -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">HERO</h1>
+            <p class="hero-subtitle">Descripción breve del Hero aquí.</p>
+            <button class="hero-button">Full Width</button>
+        </div>
+    </header>
+
+    <!-- Sección principal de contenido -->
+    <main class="main-content">
+        <section class="cards">
+            <article class="card-large">
+                <h2>Hero Section</h2>
+                <p>Esta es la tarjeta más grande debajo del Hero.</p>
+            </article>
+            <article class="card-small">
+                <h3>Left Lede</h3>
+                <p>Descripción breve para la tarjeta pequeña.</p>
+            </article>
+            <article class="card-small">
+                <h3>Even Text</h3>
+                <p>Descripción breve para la tarjeta pequeña.</p>
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>

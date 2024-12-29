@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        
+        <fieldset>
+
+            <legend>Información Personal</legend>
+
+            <label for="nombreCompleto">Nombre Completo</label>
+            <input type="text" name="nombreCompleto" id="nombreCompleto" minlength="5" maxlength="20" required>
+    
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" required>
+    
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" id="telefono" pattern="[0-9]{10}" placeholder="3025642435" required>
+
+        </fieldset>
+
+        <fieldset>
+        
+            <legend>Información neecsaria</legend>
+        
+            <label for="direccionCorreo">Correo</label>
+            <input type="email" name="direccionCorreo" id="direccionCorreo" required>
+        
+            <label for="comentario">Mensaje</label>
+            <textarea name="comentario" id="comentario" placeholder="dejanos tu comentario aqui" required></textarea>
+        
+        </fieldset>
+    
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    
+    </form>
+
+</body>
+</html>
